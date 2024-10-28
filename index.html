@@ -3,35 +3,35 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>replit</title>
   <link href="style.css" rel="stylesheet" type="text/css"/>
   <script src="script.js"></script>
 </head>
 
 <body>
-<header>
-  <h1>Virsraksts</h1>
+<header>  <ul class="navigacija">
+    <li class="nosaukums">Mājaslapa</li>
+    <li class="linija"> <a href="index.html">Sākums</a> </li>
+    <li class="linija"> <a  href="kontakti.html">Kontakti </a> </li>
+    <li class="linija"> <a href="parmums.html">Par mums</a></li>
+  </ul>
+  <marquee>Esi sveicināts!</marquee>
   <hr>
 </header>
-
- <main>
-<section>
-      <p>Rindkopa1</p>
-      <p id="cits">Rindkopa2</p>
-  <marquee>Sveicieni!</marquee>
+<main>
+   <nav class="sadalas"">
+       <h3> Meklēt</h3>
+     <input type="text">
+   </nav>
+<section class="sadalas">
+     <h3>Attēlu ievietošana</h3>
   <div>
       <img id="bilde" src="media/20240829_135145.jpg" height="200px" alt="bilde">
   </div>
-    <br>
- <nav>
-      <a href="parmums.html">Par mums</a> <br>
-      <a href="kontakti.html">Kontakti</a>
-   <br>
-   <input type="text">
-   <input type="radio"
- </nav>
-      <br>
+  </section>
+  <section class="sadalas">
+    <h3>Saraksti</h3>
       <ol type="I">
       <li ><i>Pirmais</i></li>
        <li>Otrais</li>
@@ -44,7 +44,10 @@
      
     </ul>
 </section>
-<section>
+  
+  
+<section class="sadalas">
+   <h3>Tabula</h3>
       <table border="1">
       <tr class="pirma">
         <th >Pirmais</th>
@@ -66,19 +69,20 @@
         </tr>
       </table>
 </section>
-   <section id=canva>
+  <section class="sadalas">
+   <section id=canva >
    <canvas id="zimejums" width="500" height="400"></canvas> 
      <button onclick="taisnsturis()">Parādīt taisnsturi</button> 
      <button onclick="aplis()">Parādīt apli</button>
      <button onclick="teksts()">Parādīt tekstu</button>
      <button onclick="linija()">Parādīt liniju</button>
      <button onclick="bilde()">Parādīt bildi</button>
-     <br>
      </section>
+    </section>
  </main>
     <br>
    <br>
-    <footer>&copy; Mana firma</footer>  
+    <footer class="kājene">&copy; Nadīna Anija</footer>  
   </body>
   
   </html>
